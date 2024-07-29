@@ -6,22 +6,9 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 updateScoreElement();
 
-/*
-if (!score) {
-score = {
-  wins: 0,
-  losses: 0,
-  ties: 0
-};
-}
-*/
-
 let isAutoPlaying = false;
 let intervalId;
 
-// const autoPlay = () => {
-  
-// };
 function autoPlay() {
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
@@ -133,19 +120,17 @@ if (playerMove === 'scissors') {
 
   document.querySelector('.js-moves')
     .innerHTML = `You
-      <img src="images/${playerMove}-emoji.png"
+      <img src="${playerMove}-emoji.png"
       class="move-icon">
-      <img src="images/${computerMove}-emoji.png"
+      <img src="${computerMove}-emoji.png"
       class="move-icon">
       Computer`;
-
 }
 
 function updateScoreElement() {
 document.querySelector('.js-score')
     .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
 }
-
 
 function pickComputerMove() {
 const randomNumber = Math.random();
