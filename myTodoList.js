@@ -3,7 +3,6 @@ const todoList = [];
 renderTodoList();
 
 function renderTodoList() {
-
   let todoListHTML = '';
 
   todoList.forEach((todoObject, index) => {
@@ -26,7 +25,6 @@ function renderTodoList() {
         renderTodoList();
       });
     });
-
 }
 
 document.querySelector('.js-add-todo-button')
@@ -34,14 +32,10 @@ document.querySelector('.js-add-todo-button')
     addTodo();
   });
 
-
-
 function addTodo() {
   const inputElement = document.querySelector('.js-name-input');
   const name = inputElement.value;
-
   const dateInputElement = document.querySelector('.js-due-date-input');
-
   const dueDate = dateInputElement.value;
 
   todoList.push({
@@ -50,8 +44,7 @@ function addTodo() {
     name,
     dueDate
   });
-
+  
   inputElement.value = '';
-
   renderTodoList();
 }
