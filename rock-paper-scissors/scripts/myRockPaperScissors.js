@@ -141,14 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const toggleThemeButton = document.querySelector('.js-toggle-theme-button');
   
-  toggleThemeButton.textContent = 'Light Mode';
+  toggleThemeButton.textContent = 'Light Theme';
   
-  toggleThemeButton.addEventListener('click', () => {
-    const body = document.body;
-    const currentTheme = body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark-mode' ? 'light-mode' : 'dark-mode';
-    body.setAttribute('data-theme', newTheme);
-  
-    toggleThemeButton.textContent = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+  toggleThemeButton.addEventListener('click', toggleTheme);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 't') {
+      toggleTheme();
+    }
   });
+
+  function toggleTheme() {
+    const body = document.body;
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark-mode' ? 'light-mode' : 'dark-mode';
+      body.setAttribute('data-theme', newTheme);
+
+      toggleThemeButton.textContent = newTheme === 'light-mode' ? 'Dark Theme' : 'Light Theme';
+  }
 });
