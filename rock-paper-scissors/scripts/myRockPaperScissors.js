@@ -138,13 +138,16 @@ function pickComputerMove() {
   return computerMove;
 }
 
+const body = document.body;
 const darkModeButton = document.querySelector('.js-dark-mode-button');
 const lightModeButton = document.querySelector('.js-light-mode-button');
 
 darkModeButton.addEventListener('click', () => {
-  document.body.classList.remove('light-mode');
+  body.classList.remove('light-mode');
+  body.classList.add('dark-mode');
 });
 
 lightModeButton.addEventListener('click', () => {
-  document.body.classList.add('light-mode');
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
 });
