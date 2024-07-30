@@ -138,16 +138,13 @@ function pickComputerMove() {
   return computerMove;
 }
 
-const body = document.body;
-const darkModeButton = document.querySelector('.js-dark-mode-button');
-const lightModeButton = document.querySelector('.js-light-mode-button');
+const toggleThemeButton = document.querySelector('.js-toggle-theme-button');
 
-darkModeButton.addEventListener('click', () => {
-  body.classList.remove('light-mode');
-  body.classList.add('dark-mode');
-});
+toggleThemeButton.addEventListener('click', () => {
+  const body = document.body;
+  const currentTheme = body.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark-mode' ? 'light-mode' : 'dark-mode';
+  body.setAttribute('data-theme', newTheme);
 
-lightModeButton.addEventListener('click', () => {
-  body.classList.remove('dark-mode');
-  body.classList.add('light-mode');
+  toggleThemeButton.textContent = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
 });
