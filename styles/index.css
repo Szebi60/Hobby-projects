@@ -67,6 +67,8 @@ a:hover {
   height: 250px;
   object-fit: contain;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 .project-preview h3 {

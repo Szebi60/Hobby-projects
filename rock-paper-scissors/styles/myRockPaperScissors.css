@@ -69,6 +69,7 @@ body[data-theme="light-mode"] .move-button:hover {
 
 .score {
   margin-top: 60px;
+  min-height: 20px;
 }
 
 .reset-score-button,
