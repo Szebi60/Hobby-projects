@@ -140,6 +140,8 @@ function pickComputerMove() {
 
 const toggleThemeButton = document.querySelector('.js-toggle-theme-button');
 
+toggleThemeButton.textContent = 'Light Mode';
+
 toggleThemeButton.addEventListener('click', () => {
   const body = document.body;
   const currentTheme = body.getAttribute('data-theme');

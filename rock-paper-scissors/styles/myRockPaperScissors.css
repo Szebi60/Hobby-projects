@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(49, 49, 49);
   color: white;
   font-family: Arial;
   display: flex;
@@ -11,8 +11,8 @@ body {
 }
 
 body.light-mode {
-  background-color: #5ca7ee;
-  color: #333;
+  background-color: rgb(206, 206, 206);
+  color: black;
 }
 
 .title {
