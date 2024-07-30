@@ -1,175 +1,73 @@
 body.dark-mode {
-  background-color: rgb(25, 25, 25);
-  color: white;
-  font-family: Arial;
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .container {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .title-row {
+  background-color: #555;
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+body.dark-mode .button-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.title.dark-mode {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.move-icon.dark-mode {
-  height: 50px;
-  
-}
-
-.move-button.dark-mode {
-  width: 120px;
-  height: 120px;
-  background-color: transparent;
-  border: 3px solid white;
-  border-radius: 60px;
-  padding: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.move-button.dark-mode:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.move-button.dark-mode:active {
-  transform: scale(0.95);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.result.dark-mode {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-.score.dark-mode {
-  margin-top: 60px;
-}
-
-.reset-score-button.dark-mode,
-.auto-play-button.dark-mode {
-  background-color: #4CAF50;
-  border: none;
-  font-size: 15px;
-  padding: 8px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-  flex-basis: 45%;
-  font-weight: bold;
-}
-
-.reset-score-button.dark-mode:hover {
-  background-color: #3e8e41;
-}
-
-.auto-play-button.dark-mode {
-  background-color: #03A9F4;
-}
-
-.auto-play-button.dark-mode:hover {
-  background-color: #039BE5;
-}
-
-.reset-score-button.dark-mode:active,
-.auto-play-button.dark-mode:active {
-  transform: scale(0.95);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.container.dark-mode {
-  margin: 0 auto;
-  width: 300px;
-  text-align: center;
-}
-
-.button-row.dark-mode {
-  flex-direction: row;
-  justify-content: center;
-  width: 300px;
-}
-
-.scoreboard-row.dark-mode {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  word-wrap: break-word;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.action-button-row.dark-mode {
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-
-.instructions-row.dark-mode {
-  flex-direction: column;
-  text-align: left;
-}
-
-.title-row.dark-mode,
-.button-row.dark-mode,
-.scoreboard-row.dark-mode,
-.action-button-row.dark-mode,
-.instructions-row.dark-mode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.title-row.dark-mode {
+  justify-content: space-between;
   margin-top: 20px;
 }
 
-.button-row.dark-mode {
-  flex-direction: row;
-  width: 300px;
+body.dark-mode .move-button {
+  background-color: #666;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body.dark-mode .move-button:hover {
+  background-color: #777;
 }
 
 body.light-mode {
-  background-color: #f9f9f9;
-  color: #333;
-  font-family: Arial;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.title.light-mode {
-  font-size: 30px;
-  font-weight: bold;
+  background-color: #f0f0f0;
   color: #333;
 }
 
-.move-icon.light-mode {
-  height: 50px;
-}
-
-.move-button.light-mode {
-  width: 120px;
-  height: 120px;
+body.light-mode .container {
   background-color: #fff;
-  border: 3px solid #333;
-  border-radius: 60px;
-  padding: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.move-button.light-mode:hover {
-  transform: scale(1.05);
+body.light-mode .title-row {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode .button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+body.light-mode .move-button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body.light-mode .move-button:hover {
+  background-color: #f5f5f5;
 }
