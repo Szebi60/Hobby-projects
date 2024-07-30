@@ -69,6 +69,7 @@ a:hover {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .project-preview h3 {
