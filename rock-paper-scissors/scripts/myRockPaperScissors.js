@@ -137,3 +137,14 @@ function pickComputerMove() {
 
   return computerMove;
 }
+
+const darkModeButton = document.querySelector('.js-dark-mode-button');
+const lightModeButton = document.querySelector('.js-light-mode-button');
+
+darkModeButton.addEventListener('click', () => {
+  document.body.classList.remove('light-mode');
+});
+
+lightModeButton.addEventListener('click', () => {
+  document.body.classList.add('light-mode');
+});
