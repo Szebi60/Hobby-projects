@@ -127,7 +127,7 @@ body[data-theme="light-mode"] .move-button:hover {
 .instructions-row {
   flex-direction: column;
   text-align: left;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .title-row, .button-row, .scoreboard-row, .action-button-row, .instructions-row {
