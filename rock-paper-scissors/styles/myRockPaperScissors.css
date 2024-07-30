@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+body.light-mode {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
 .title {
   font-size: 30px;
   font-weight: bold;
@@ -30,6 +35,14 @@ body {
   margin-right: 10px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+body.light-mode .move-button {
+  border: 3px solid black;
+}
+
+body.light-mode .move-button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .move-button:hover {
